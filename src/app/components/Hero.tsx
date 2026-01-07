@@ -45,7 +45,7 @@ export function Hero() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-500/20 rounded-full border border-purple-500/30 mb-8">
               <Zap className="w-4 h-4 text-purple-400" />
-              <span className="text-purple-300 text-sm font-medium">Música Electrónica Premium</span>
+              <span className="text-purple-300 text-sm font-medium">Música Electrónica Alternativa</span>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
@@ -63,7 +63,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed"
           >
-            Explora nuestra colección exclusiva de música electrónica. 
+            Explora nuestra colección exclusiva de música electrónica Alternativa. 
             Desde EBM hasta techno industrial, encuentra los beats que mueven tu alma.
           </motion.p>
 

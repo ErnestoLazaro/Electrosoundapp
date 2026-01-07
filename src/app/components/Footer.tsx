@@ -1,5 +1,5 @@
 import { Facebook, Instagram, Twitter, Youtube, Mail } from 'lucide-react';
-import imgLogoPrincipal from "figma:asset/2cd43f2cf06fa897c24731484233856b8ef518a7.png";
+import imgLogoPrincipal from "figma:asset/2bf557ab640857322a6181cca9c5c40ad1edc3c4.png";
 
 export function Footer() {
   return (
@@ -9,13 +9,10 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src={imgLogoPrincipal} alt="Electrosound" className="h-10 w-auto" />
-              <span className="text-[#eff6b2] font-bold text-xl tracking-wider">
-                ELECTROSOUND
-              </span>
+              <img src={imgLogoPrincipal} alt="Electrosound" className="h-16 w-auto" />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
-              Tu tienda online de música electrónica premium. Descubre los mejores beats desde 2010.
+              Tu tienda online de música electrónica Alternativa. Descubre los mejores beats desde 2010.
             </p>
             <div className="flex gap-3">
               <a
