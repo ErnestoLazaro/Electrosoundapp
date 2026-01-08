@@ -38,7 +38,9 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           >
             {/* Header */}
             <div className="flex items-center justify-between p-6 border-b border-purple-500/20">
-              <h2 className="text-2xl font-bold text-[#eff6b2]">ELECTROSOUND</h2>
+              <a href="#home" onClick={onClose}>
+                <h2 className="text-2xl font-bold text-[#eff6b2] hover:text-[#eff6b2]/80 transition-colors cursor-pointer">ELECTROSOUND</h2>
+              </a>
               <button
                 onClick={onClose}
                 className="p-2 hover:bg-purple-500/10 rounded-lg transition-colors"

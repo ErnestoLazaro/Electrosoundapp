@@ -8,9 +8,9 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
+            <a href="#home" className="flex items-center gap-2 mb-4">
               <img src={imgLogoPrincipal} alt="Electrosound" className="h-16 w-auto" />
-            </div>
+            </a>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
               Tu tienda online de música electrónica Alternativa. Descubre los mejores beats desde 2010.
             </p>
@@ -136,7 +136,10 @@ export function Footer() {
         <div className="pt-8 border-t border-purple-500/20">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-gray-500 text-sm text-center md:text-left">
-              © 2026 Electrosound. Todos los derechos reservados.
+              © 2026 Electrosound. Todos los derechos reservados. Página realizada por{' '}
+              <a href="https://www.ernestolazaro.com.mx/" className="text-gray-500 hover:text-gray-400 text-sm transition-colors">
+                Ernesto Lázaro 🦇
+              </a>
             </p>
             <div className="flex gap-6">
               <a href="#privacy" className="text-gray-500 hover:text-gray-400 text-sm transition-colors">

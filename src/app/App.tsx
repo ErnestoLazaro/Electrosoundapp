@@ -4,6 +4,7 @@ import { Hero } from './components/Hero';
 import { AlbumCard } from './components/AlbumCard';
 import { MobileMenu } from './components/MobileMenu';
 import { Cart } from './components/Cart';
+import { UserProfile } from './components/UserProfile';
 import { Footer } from './components/Footer';
 import { toast, Toaster } from 'sonner';
 
@@ -92,7 +93,38 @@ const albums = [
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
+  const [userProfileOpen, setUserProfileOpen] = useState(false);
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
+
+  // Mock user data
+  const userData = {
+    name: 'DJ CyberNova',
+    avatar: 'https://images.unsplash.com/photo-1724435811349-32d27f4d5806?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBwcm9maWxlJTIwYXZhdGFyfGVufDF8fHx8MTc2Nzc0OTg0MXww&ixlib=rb-4.1.0&q=80&w=1080',
+    favoriteGenres: ['EBM', 'Industrial', 'Techno', 'Synthwave'],
+    purchasedAlbums: [
+      {
+        id: '1',
+        title: 'Rebel Empire',
+        artist: 'Movimiento Máquina',
+        image: imgPortadaRebel,
+        purchaseDate: '15 Dic 2024',
+      },
+      {
+        id: '2',
+        title: 'Formato Negativo',
+        artist: 'Dark Synthesis',
+        image: imgPortadaRebel1,
+        purchaseDate: '28 Nov 2024',
+      },
+      {
+        id: '4',
+        title: 'Brigadier',
+        artist: 'War Machine',
+        image: imgPortadaRebel3,
+        purchaseDate: '10 Oct 2024',
+      },
+    ],
+  };
 
   const handleAddToCart = (album: typeof albums[0]) => {
     const existingItem = cartItems.find(item => item.id === album.id);
@@ -131,8 +163,14 @@ export default function App() {
   };
 
   const handlePlayPreview = (title: string) => {
-    toast.info(`Reproduciendo preview de "${title}"`);
+    toast.info(`Reproduciendo preview de \"${title}\"`);
     // Here you would implement audio playback
+  };
+
+  const handleLogout = () => {
+    setUserProfileOpen(false);
+    toast.success('Sesión cerrada correctamente');
+    // Here you would implement logout logic
   };
 
   return (
@@ -153,6 +191,7 @@ export default function App() {
         onMenuClick={() => setMenuOpen(true)}
         cartItemCount={cartItems.reduce((sum, item) => sum + item.quantity, 0)}
         onCartClick={() => setCartOpen(true)}
+        onUserClick={() => setUserProfileOpen(true)}
       />
       
       <MobileMenu 
@@ -169,11 +208,21 @@ export default function App() {
         onCheckout={handleCheckout}
       />
 
-      <main>
+      <UserProfile
+        isOpen={userProfileOpen}
+        onClose={() => setUserProfileOpen(false)}
+        userName={userData.name}
+        userAvatar={userData.avatar}
+        favoriteGenres={userData.favoriteGenres}
+        purchasedAlbums={userData.purchasedAlbums}
+        onLogout={handleLogout}
+      />
+
+      <main id="home">
         <Hero />
 
         {/* Albums Section */}
-        <section id="albums" className="container mx-auto px-4 py-16">
+        <section id="catalogo-premium" className="container mx-auto px-4 py-16">
           <div className="mb-12">
             <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
               Catálogo <span className="text-[#eff6b2]">Premium</span>

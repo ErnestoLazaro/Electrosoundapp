@@ -73,17 +73,17 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="flex flex-wrap items-center justify-center gap-4"
           >
-            <button className="group relative px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-500 rounded-full font-bold text-white text-lg transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/50 hover:scale-105 active:scale-95 overflow-hidden">
+            <a href="#catalogo-premium" className="group relative px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-500 rounded-full font-bold text-white text-lg transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/50 hover:scale-105 active:scale-95 overflow-hidden">
               <span className="relative z-10 flex items-center gap-2">
                 <Headphones className="w-5 h-5" />
                 Explorar Catálogo
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-purple-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            </button>
+            </a>
             
-            <button className="px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full font-bold text-white text-lg transition-all duration-300 hover:bg-white/10 hover:border-white/20 hover:scale-105 active:scale-95">
+            <a href="#artists" className="px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full font-bold text-white text-lg transition-all duration-300 hover:bg-white/10 hover:border-white/20 hover:scale-105 active:scale-95">
               Ver Artistas
-            </button>
+            </a>
           </motion.div>
 
           {/* Stats */}

@@ -6,9 +6,10 @@ interface HeaderProps {
   onMenuClick: () => void;
   cartItemCount: number;
   onCartClick: () => void;
+  onUserClick: () => void;
 }
 
-export function Header({ onMenuClick, cartItemCount, onCartClick }: HeaderProps) {
+export function Header({ onMenuClick, cartItemCount, onCartClick, onUserClick }: HeaderProps) {
   const [searchOpen, setSearchOpen] = useState(false);
 
   return (
@@ -24,20 +25,20 @@ export function Header({ onMenuClick, cartItemCount, onCartClick }: HeaderProps)
             >
               <Menu className="w-6 h-6 text-[#eff6b2]" />
             </button>
-            <div className="flex items-center gap-2">
+            <a href="#home" className="flex items-center gap-2">
               <img src={imgLogoPrincipal} alt="Electrosound" className="h-10 w-auto" />
-            </div>
+            </a>
           </div>
 
           {/* Navigation - Desktop */}
           <nav className="hidden lg:flex items-center gap-6">
-            <a href="#albums" className="text-gray-300 hover:text-[#eff6b2] transition-colors font-medium">
+            <a href="#catalogo-premium" className="text-gray-300 hover:text-[#eff6b2] transition-colors font-medium">
               Discos
             </a>
             <a href="#artists" className="text-gray-300 hover:text-[#eff6b2] transition-colors font-medium">
               Artistas
             </a>
-            <a href="#genres" className="text-gray-300 hover:text-[#eff6b2] transition-colors font-medium">
+            <a href="#catalogo-premium" className="text-gray-300 hover:text-[#eff6b2] transition-colors font-medium">
               Géneros
             </a>
             <a href="#about" className="text-gray-300 hover:text-[#eff6b2] transition-colors font-medium">
@@ -57,6 +58,7 @@ export function Header({ onMenuClick, cartItemCount, onCartClick }: HeaderProps)
             <button
               className="p-2 hover:bg-purple-500/10 rounded-lg transition-colors hidden sm:flex"
               aria-label="User account"
+              onClick={onUserClick}
             >
               <User className="w-5 h-5 text-gray-300" />
             </button>
