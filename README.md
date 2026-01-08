@@ -730,7 +730,7 @@ SOFTWARE.
 ## 👨‍💻 Autor
 
 <div align="center">
-  <img src="https://www.ernestolazaro.com.mx/_assets/v11/cdbf46178ea2d5345171aef0fd65f04e5e481247.png" alt="Ernesto Lázaro" style="border-radius: 50%;" width="250" height="250" />
+  <img src="https://www.ernestolazaro.com.mx/_assets/v11/cdbf46178ea2d5345171aef0fd65f04e5e481247.png" alt="Ernesto Lázaro" style="border-radius: 50%;" width="250" height="280" />
   
   ### **Ernesto Lázaro** 🦇
   
@@ -739,12 +739,12 @@ SOFTWARE.
   [![Website](https://img.shields.io/badge/Website-ernestolazaro.com.mx-purple?style=for-the-badge)](https://www.ernestolazaro.com.mx/)
   [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=for-the-badge&logo=github)](https://github.com/ernestolazaro)
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/ernestolazaro)
-  [![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:contact@ernestolazaro.com.mx)
+  [![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:ernesto.lazaro.1984@gmail.com)
 </div>
 
 ### 💼 Experiencia
 
-- **Especialización**: React, TypeScript, Node.js, UI/UX Design
+- **Especialización**: Ingeniero de soporte CTC, Diseñador UX/UI
 - **Industrias**: E-commerce, Fintech, Entertainment
 - **Herramientas**: Figma, Adobe Creative Suite, Git, Docker
 
