@@ -730,7 +730,7 @@ SOFTWARE.
 ## 👨‍💻 Autor
 
 <div align="center">
-  <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=200&h=200&fit=crop" alt="Ernesto Lázaro" style="border-radius: 50%;" />
+  <img src="https://www.ernestolazaro.com.mx/_assets/v11/cdbf46178ea2d5345171aef0fd65f04e5e481247.png" alt="Ernesto Lázaro" style="border-radius: 50%;" />
   
   ### **Ernesto Lázaro** 🦇
   
