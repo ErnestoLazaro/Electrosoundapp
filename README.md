@@ -730,11 +730,11 @@ SOFTWARE.
 ## 👨‍💻 Autor
 
 <div align="center">
-  <img src="https://www.ernestolazaro.com.mx/_assets/v11/cdbf46178ea2d5345171aef0fd65f04e5e481247.png" alt="Ernesto Lázaro" style="border-radius: 50%;" width="100" height="100" />
+  <img src="https://www.ernestolazaro.com.mx/_assets/v11/cdbf46178ea2d5345171aef0fd65f04e5e481247.png" alt="Ernesto Lázaro" style="border-radius: 50%;" width="250" height="150" />
   
   ### **Ernesto Lázaro** 🦇
   
-  *Full Stack Developer | UI/UX Designer | Music Enthusiast*
+  *Ingeniero | Diseñador UX/UI | Music Enthusiast*
   
   [![Website](https://img.shields.io/badge/Website-ernestolazaro.com.mx-purple?style=for-the-badge)](https://www.ernestolazaro.com.mx/)
   [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=for-the-badge&logo=github)](https://github.com/ernestolazaro)
