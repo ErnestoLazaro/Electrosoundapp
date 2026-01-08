@@ -1,3 +1,4 @@
+import image_a90e8109f6eb7b42db84094f21c52b168e93eda1 from 'figma:asset/a90e8109f6eb7b42db84094f21c52b168e93eda1.png';
 import { useState } from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
@@ -99,7 +100,7 @@ export default function App() {
   // Mock user data
   const userData = {
     name: 'DJ CyberNova',
-    avatar: 'https://images.unsplash.com/photo-1724435811349-32d27f4d5806?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBwcm9maWxlJTIwYXZhdGFyfGVufDF8fHx8MTc2Nzc0OTg0MXww&ixlib=rb-4.1.0&q=80&w=1080',
+    avatar: image_a90e8109f6eb7b42db84094f21c52b168e93eda1,
     favoriteGenres: ['EBM', 'Industrial', 'Techno', 'Synthwave'],
     purchasedAlbums: [
       {
